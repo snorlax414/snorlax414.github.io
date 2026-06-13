@@ -36,7 +36,7 @@ From both formulae it is apparent that as the frequency increases, impedance val
 again, and current value increases, peaks to a point and falls off again. The value of frequency at which current peaks is 
 called resonant frequency, where the opposition to current is least. In that case, $z = R$, which means $X_L = X_C$, i.e,
 
-$\omega = \frac{1}{\sqrt{L C}}$ 
+$$\omega = \frac{1}{\sqrt{LC}}$$
 
 ---
 
@@ -54,8 +54,7 @@ $\omega = \frac{1}{\sqrt{L C}}$
 
    Below is the live, interactive simulation deployed via the Wolfram Cloud. 
 
-<iframe width='800' height='400' src='https://www.wolframcloud.com/obj/3f9e64ec-99af-4301-b34a-f3f38f95f3f1' frameborder='0'></iframe>
-
+<iframe width='800' height='400' src='https://www.wolframcloud.com/obj/ec378712-d59a-4c63-9db6-6a7c04f24c75' frameborder='0'></iframe>
 
 
 
