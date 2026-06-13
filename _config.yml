@@ -1,0 +1,13 @@
+title: M Sengupta | Physics & Simulations
+description: A hub for academic projects, physics notes, and interactive Wolfram simulations.
+theme: jekyll-theme-cayman
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Custom variables
+mathjax: true
