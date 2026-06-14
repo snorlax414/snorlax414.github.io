@@ -44,6 +44,6 @@ From both formulae it is apparent that as the frequency increases, impedance val
 
 Below is the live, interactive simulation deployed via the Wolfram Cloud.
 
-<iframe width='800' height='400' src='https://www.wolframcloud.com/obj/3f9e64ec-99af-4301-b34a-f3f38f95f3f1' frameborder='0'></iframe>
+<iframe width='800' height='400' src='https://www.wolframcloud.com/obj/9e7c92cb-17ad-4d4e-a8c5-f01c541d3eb8' frameborder='0'></iframe>
 
 > 💡 **Tip:** If the interactive panels fail to respond, refresh the page to clear the cloud container state.
