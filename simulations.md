@@ -18,7 +18,7 @@ The components of an LCR circuit include a resistor, a capacitor and an inductor
 
 The formula of impedance ($Z$) is given by:
 
-$$Z = \sqrt{R^2 + (X_L - X_C)^2}$$
+<p>$$Z = \sqrt{R^2 + (X_L - X_C)^2}$$</p>
 
 Where:
 * $R$ is the resistance
@@ -27,11 +27,11 @@ Where:
 
 It is seen that impedance is dependent on frequency of the source. The maximum current ($I_0$) in an AC circuit is measured as:
 
-$$I_0 = \frac{V_0}{Z}$$
+<p>$$I_0 = \frac{V_0}{Z}$$</p>
 
 From both formulae it is apparent that as the frequency increases, impedance value drops to a pit and then slowly increases again, and current value increases, peaks to a point and falls off again. The value of frequency at which current peaks is called **resonant frequency**, where the opposition to current is least. In that case, $Z = R$, which means $X_L = X_C$, i.e.,
 
-$$\omega = \frac{1}{\sqrt{LC}}$$
+<p>$$\omega = \frac{1}{\sqrt{LC}}$$</p>
 
 ## How the Simulation Works
 
