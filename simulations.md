@@ -46,5 +46,65 @@ Below is the live, interactive simulation deployed via the Wolfram Cloud.
 
 <iframe width='800' height='400' src='https://www.wolframcloud.com/obj/3e32e9fe-f323-4b61-a5f0-adbc95267752' frameborder='0'></iframe>
 
+<br>
+<details>
+  <summary style="cursor: pointer; font-weight: bold; color: #0066cc; font-size: 1.1em; user-select: none;">
+    ▶ Click to View Wolfram Language Source Code
+  </summary>
+  
+  <br>
+
+```wolfram
+Manipulate[
+  Module[{w0, maxCurrent, impedanceCurve, currentCurve},
+    w0 = 1/Sqrt[L*C];
+    maxCurrent = V0/R;
+    
+    (* CloudDeploy[
+ Manipulate[
+  Module[{w0, maxCurrent, impedanceCurve, currentCurve}, 
+   w0 = 1/Sqrt[L*C];
+   maxCurrent = V0/R;
+   impedanceCurve = 
+    Plot[Sqrt[R^2 + (w*L - 1/(w*C))^2], {w, 10, 1000}, 
+     PlotStyle -> {Blue, Thick}, 
+     AxesLabel -> {"Frequency (\[Omega])", "Impedance (Z)"}, 
+     PlotLabel -> Style["Impedance vs Frequency Curve", Bold, 12], 
+     PlotRange -> {0, 300}, GridLines -> {{w0}, {R}}, 
+     GridLinesStyle -> Directive[Gray, Dashed], 
+     Epilog -> {Red, PointSize[0.02], Point[{w0, R}], 
+       Text[Style["Minimum Z = R", Darker[Gray], 10], {w0 + 100, 
+         R + 15}]}, ImageSize -> 350];
+   currentCurve = 
+    Plot[V0/Sqrt[R^2 + (w*L - 1/(w*C))^2], {w, 10, 1000}, 
+     PlotStyle -> {Darker[Green], Thick}, 
+     AxesLabel -> {"Frequency (\[Omega])", 
+       "Peak Current (\!\(\*SubscriptBox[\(I\), \(0\)]\))"}, 
+     PlotLabel -> Style["Current Resonance Curve", Bold, 12], 
+     PlotRange -> {0, maxCurrent + 0.5}, 
+     GridLines -> {{w0}, {maxCurrent}}, 
+     GridLinesStyle -> Directive[Gray, Dashed], 
+     Epilog -> {Red, PointSize[0.02], Point[{w0, maxCurrent}], 
+       Text[Style["Max Current", Darker[Gray], 10], {w0 + 100, 
+         maxCurrent - 0.2}]}, ImageSize -> 350];
+   Column[{Text@
+      Style[Row[{"Calculated Resonant Frequency (\!\(\*SubscriptBox\
+[\(\[Omega]\), \(0\)]\)): ", NumberForm[w0, {5, 2}], " rad/s"}], 12, 
+       Bold, Darker[Blue]], Spacer[10], 
+     Row[{impedanceCurve, Spacer[15], currentCurve}]}, 
+    Alignment -> Center]], {{R, 20, "Resistance (R in Ω)"}, 5, 100, 1,
+    Appearance -> "Labeled"}, {{L, 0.2, "Inductance (L in H)"}, 0.05, 
+   1.0, 0.01, 
+   Appearance -> "Labeled"}, {{C, 0.00005, "Capacitance (C in F)"}, 
+   0.00001, 0.0002, 0.00001, 
+   Appearance -> "Labeled"}, {{V0, 220, 
+    "Source Voltage (\!\(\*SubscriptBox[\(V\), \(0\)]\) in V)"}, 100, 
+   440, 10, Appearance -> "Labeled"}, TrackedSymbols :> {R, L, C, V0}],
+  Permissions -> "Public"] *)
+    
+  ]
+]
+
+
 
 > 💡 **Tip:** If the interactive panels fail to respond, refresh the page to clear the cloud container state.
