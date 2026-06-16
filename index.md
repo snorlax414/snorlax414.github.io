@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Home
+title: Internship Project
 ---
 
 # Welcome to My Academic Hub
