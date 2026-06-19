@@ -47,6 +47,14 @@ Below is the live, interactive simulation deployed via the Wolfram Cloud.
 <iframe width='800' height='400' src='https://www.wolframcloud.com/obj/3e32e9fe-f323-4b61-a5f0-adbc95267752' frameborder='0'></iframe>
 
 
+---
+
+## 🛠️ Project Repository & Source Code
+
+* **Web Deployment:** The complete codebase for this Markdown site, its styling, and layout assets can be found in my public [GitHub Repository](https://github.com/snorlax414/snorlax414.github.io).
+* **Wolfram Simulation Code:** The live interactive kernel script is hosted directly via the [Wolfram Cloud Notebook](https://www.wolframcloud.com/obj/3e32e9fe-f323-4b61-a5f0-adbc95267752). You can view the symbolic physics definitions and the structural layout parameters directly in the cloud notebook environment.
 
 
-> 💡 **Tip:** If the interactive panels fail to respond, refresh the page to clear the cloud container state.
+
+
+> 💡 **Tip:** Downloading and opening the file in device will provide a better view.
